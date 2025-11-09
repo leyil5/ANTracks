@@ -8,5 +8,5 @@ Create a Google Gemini API key and add it to a .env file in the base directory
 The .env file contains:
 GEMINIKEY = "YOUR_GEMINI_API_KEY"
 
-
+Run pip3 install -r requirements.txt
 Run via app.py
