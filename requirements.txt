@@ -1,0 +1,9 @@
+
+gunicorn
+pymongo[gssapi,srv,tls]
+flask-cors
+python-dotenv
+flake8
+google-genai>=0.5.0
+python-dotenv>=1.0.0
+

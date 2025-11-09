@@ -1,0 +1,279 @@
+
+.container {
+    font-family: 'Calibri', sans-serif;
+    color: #10629d;
+    align-items: center;
+    justify-content: center;
+}
+.list-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#exampleFormBtn1 {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 20px;  
+    transition-duration: 0.4s;
+}
+
+#exampleFormBtn1:hover {
+    background-color: lightyellow;
+    color: #10629d;
+    border-color: #10629d;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#exampleFormBtn2 {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+#exampleFormBtn2:hover {
+    background-color: lightyellow;
+    color: #10629d;
+    border-color: #10629d;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#exampleFormBtn3 {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 50px;        
+    padding: 14px 24px;         
+    text-decoration: none;   
+    display: inline-block;      
+    font-size: 18px;            
+    font-weight: bold;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#exampleFormBtn3:hover {
+    background-color: lightyellow;
+    color: #badbf3;
+    border-color: #badbf3;
+    border-radius: 50px;        
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+#suggestionsButton {
+    margin-top: 0.2px;
+    text-align: center; 
+    background-color: #badbf3;
+    color: white;
+    border-color: white;         
+    font-size: 20px;            
+    font-weight: bold;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#suggestionsButton:hover {
+    background-color: lightyellow;
+    color: #badbf3;
+    border-color: #badbf3;       
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+#exampleFormControlInput1,
+#exampleFormControlInput2 {
+    font-size: 20px; 
+}
+
+label[for="exampleFormControlInput1"],
+label[for="exampleFormControlInput2"] {
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+#the-box {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    min-height: 20px;
+    border: 5px solid #badbf3;
+    background-color: white;
+    font-family: 'Calibri', sans-serif;
+}
+
+#suggestion {
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background-color: white;
+    font-family: 'Calibri', sans-serif;
+}
+
+#content1 {
+    background-color: lightyellow;
+    padding: 20px;
+    border: 10px  yellow;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content2 {
+    background-color: lightyellow;
+    padding: 20px;
+    border: 10px  yellow;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content3 {
+    background-color: lightyellow;
+    padding: 20px;
+    border: 10px  yellow;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content3 + p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.expenses-section {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    font-family: 'Calibri', sans-serif;    
+}
+
+.section-box {
+    background-color: lightyellow;
+    border: 1px solid #aac4ff;
+    color: #10629d;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 15px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-button {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 50px;        
+    padding: 14px 24px;         
+    text-decoration: none;   
+    display: inline-block;      
+    font-size: 20px;
+    text-align: center; 
+    font-family: 'Calibri', sans-serif;           
+    font-weight: bold;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);        
+}
+
+.link-button:hover {
+    background-color: lightyellow;
+    color: #badbf3;
+    border-color: #badbf3;
+    border-radius: 50px;        
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.section-box button {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+.section-box button:hover {
+    background-color: lightyellow;
+    color: #10629d;
+    border-color: #10629d;
+    border-radius: 10px;
+}
+
+.savings-goal-section {
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 350px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+.savings-goal-section input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.savings-goal-section p {
+    margin: 0;   
+}
+
+.savings-goal-section button {
+    background-color: #badbf3;
+    color: white;
+    border-color: white;
+    border-radius: 50px;        
+    padding: 14px 24px;         
+    text-decoration: none;   
+    display: inline-block;      
+    font-size: 18px;            
+    font-weight: bold;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.savings-goal-section button:hover {
+    background-color: lightyellow;
+    color: #badbf3;
+    border-color: #badbf3;
+    border-radius: 50px;        
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.suggestions{
+    font-family: 'Calibri', sans-serif;
+    color: #10629d;
+}
+
+#summary, 
+#suggestion1, 
+#suggestion2, 
+#suggestion3,
+#encouragement {
+    width: 95%;          
+    padding: 8px;
+    border-radius: 6px;
+    border: 3px solid #10629d;
+    background-color: #e1effa;
+    font-size: 16px;
+    font-family: 'Calibri', sans-serif;
+    display: block;
+    margin: 0 auto;
+}

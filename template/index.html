@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<div style="position: relative; width: 100%; height: 0; padding-top: 31.6216%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAG4JOLiWpA/f_sQ4b56Jlq8c0CeiZtDqQ/view?embed">
+  </iframe>
+</div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Load CSS and JS files -->
+        <!-- 
+        Load your custom scripts!
+        These can retrieve and send data for the frontend,
+        as well as change the way the website looks!
+    -->
+        <link rel="stylesheet" href="static/styles.css" />
+        <title>ANTracks</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Integrating HTML, CSS and JS -->
+            <!-- 
+            This chunk of the site uses HTML, CSS and JS. If you look in script.js,
+            you can see how you can use JS to select elements from the HTML document.
+            If you look in styles.css, you can see how you can use CSS to style elements
+            in the HTML document.
+            By using the ids of each of the elements, both the JS and CSS files are able to
+            extract and modify the elements without having to do so in index.html. Otherwise,
+            if everything is in one file, the code will look extremely messy!
+            Here, we have a greeting initially called "Hello, world". However, using JS, you can
+            change the greeting to a custom input by clicking the button.    
+
+        -->
+            <br>
+            <h1>Welcome to ANTracks!
+            <h2>Input your monthly savings, income, expenses, and savings goal to get personalized student budgeting tips</h2>
+            <br>
+            <div id="the-box">
+                <p id="content1">$</p>
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label"
+                        >Savings</label
+                    >
+                    <input
+                        id="exampleFormControlInput1"
+                        placeholder="enter savings"
+                    />
+                </div>
+                <button type="enter" id="exampleFormBtn1">Submit</button>
+                <p id="content2">$</p>
+                <div>
+                    <label for="exampleFormControlInput2" class="form-label"
+                        >Income</label
+                    >
+                    <input
+                        id="exampleFormControlInput2"
+                        placeholder="enter income"
+                    />
+                </div>
+                <button type="enter" id="exampleFormBtn2">Submit</button>
+                <p id="content3">$</p> <p>Expenses</p>
+                
+            </div>
+
+            <br><br>
+
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="https://www.canva.com/design/DAG4JVUqCCk/vtwNekOaImTBbmY1U0RHWA/view?embed" class="link-button" target=" _blank">
+                What do the different kinds of expenses mean?
+            </a>
+        </div>
+
+        <br><br>
+
+        <div class="expenses-section">
+            <div class="section-box">
+                <label for="user-expense1">Enter Fixed Expenses:</label>
+                <input type="number" id="user-expense1" placeholder="e.g., 100">
+                <button onclick="submitNumber('user-expense1', 'user-number1')">Submit</button>
+                <p id="user-number1">No expenses yet.</p>
+            </div>
+            <div class="section-box">
+                <label for="user-expense2">Enter Variable Expenses:</label>
+                <input type="number" id="user-expense2" placeholder="e.g., 100">
+                <button onclick="submitNumber('user-expense2', 'user-number2')">Submit</button>
+                <p id="user-number2">No expenses yet.</p>
+            </div>
+            <div class="section-box">
+                <label for="user-expense3">Enter Intermittent Expenses:</label>
+                <input type="number" id="user-expense3" placeholder="e.g., 100">
+                <button onclick="submitNumber('user-expense3', 'user-number3')">Submit</button>
+                <p id="user-number3">No expenses yet.</p>
+            </div>
+            <div class="section-box">
+                <label for="user-expense4">Enter Discretionary Expenses:</label>
+                <input type="number" id="user-expense4" placeholder="e.g., 100">
+                <button onclick="submitNumber('user-expense4', 'user-number4')">Submit</button>
+                <p id="user-number4">No expenses yet.</p>
+            </div>
+        </div>
+        <br><br><br><br>
+        
+        <div class="savings-goal-section">
+            <label for="savings-goal">Enter Your Savings Goal: $</label>
+            <input type="number" id="savings-goal" placeholder="e.g., 500" />
+            <button onclick="submitGoal()">Submit</button>
+            <p id="goal-display">No goal set yet.</p>
+        </div>
+        <br><br><br><br>
+        
+        <div id="suggestion" style="text-align: center; margin-top: 20px;">
+            <a id="suggestionsButton" class="link-button">Generate Suggestions</a>
+        </div>
+
+        <!-- Load scripts at the end of your HTML to make pages load faster! -->
+                 <script src="static/script.js"></script>
+        <script>
+            button = document.getElementById("suggestionsButton");
+            button.addEventListener("click", async () => {
+                button.disabled = true;
+                button.textContent = "Generating..."; // optional visual feedback
+            const income = document.getElementById("exampleFormControlInput2").value;
+
+            const current_saving = document.getElementById("exampleFormControlInput1").value;
+            const fixed = document.getElementById("user-expense1").value;
+            const variable = document.getElementById("user-expense2").value;
+            const intermittent = document.getElementById("user-expense3").value;
+            const discretionary = document.getElementById("user-expense4").value;
+            const saving = document.getElementById("savings-goal").value;
+            const data = {income:income, 
+            fixed:fixed,
+            variable:variable,
+            intermittent:intermittent,
+            discretionary:discretionary,
+            current_saving:current_saving,
+            saving:saving
+            }
+            console.log("listing_variables");
+            console.log(current_saving);
+            console.log(fixed);
+            console.log(variable);
+            console.log(intermittent);
+            console.log(discretionary);
+            console.log(saving);
+            console.log(data);
+            try {
+                const response = await fetch('/Gemini_Request', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                });
+                // Handle non-OK status codes
+                if (!response.ok) {
+                    throw new Error(`Server responded with status ${response.status}`);
+                    }
+
+                    const result = await response.json();
+
+                    // ✅ Save and redirect only if successful
+                    sessionStorage.setItem("backendData", JSON.stringify(result));
+                    window.location.href = "/suggestions";
+                    console.log("Success:", result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+                alert("There was a problem generating suggestions. Please try again.");
+            } finally{}
+                button.disabled = false;
+                button.textContent = "Generate Suggestions";
+            });
+            
+
+        </script>
+    </body>
+</html>
